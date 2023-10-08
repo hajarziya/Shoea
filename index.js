@@ -1,0 +1,13 @@
+import "./src/input.scss";
+import "./src/pages/home/styles.scss";
+import "./src/pages/onboarding/styles.scss";
+import "./src/pages/products/styles.scss";
+import "./src/pages/products/details/styles.scss";
+import "./src/pages/cart/styles.scss";
+import "./src/pages/checkout/styles.scss";
+import "./src/pages/checkout/shipping_address/styles.scss";
+import "./src/pages/checkout/choose_shipping/styles.scss";
+import "./src/pages/checkout/payment_methods/styles.scss";
+import "./src/pages/search/styles.scss";
+import "./src/pages/orders/styles.scss";
+import "./src/pages/login/styles.scss";

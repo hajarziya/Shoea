@@ -1,0 +1,52 @@
+.container__paymentmethods {
+  @apply relative bg-bg-product pb-32 py-10 px-5;
+}
+.container__paymentmethods .header {
+  @apply flex items-center justify-between w-full;
+}
+.container__paymentmethods .header .header__left {
+  @apply flex items-center;
+}
+.container__paymentmethods .header .header__left .header__logo {
+  @apply h-6 w-6;
+}
+.container__paymentmethods .header .header__left .header__name {
+  @apply text-lg font-semibold;
+}
+.container__paymentmethods .header .icon_box {
+  border: 2px solid black;
+  @apply rounded-md flex items-center;
+}
+.container__paymentmethods .select__title {
+  @apply text-gray-500 text-xs my-6;
+}
+.container__paymentmethods .payment__methods--wrapper .payment__box {
+  @apply flex mt-5 mx-auto bg-white gap-3 p-4 rounded-lg items-center justify-between;
+}
+.container__paymentmethods .payment__methods--wrapper .payment__box .part__left {
+  @apply flex items-center;
+}
+.container__paymentmethods .payment__methods--wrapper .payment__box .part__left .payment__icon {
+  @apply w-7;
+}
+.container__paymentmethods .payment__methods--wrapper .payment__box .part__left .location__wrapper .location__name {
+  @apply font-semibold text-base;
+}
+.container__paymentmethods .payment__methods--wrapper .payment__box .part__left .location__wrapper .location__address {
+  @apply text-xs text-gray-500;
+}
+.container__paymentmethods .payment__methods--wrapper .payment__box .checkbox {
+  @apply ml-16;
+}
+.container__paymentmethods .line {
+  @apply mx-5;
+}
+.container__paymentmethods .btn__addaddaress {
+  @apply mt-10 px-20 flex items-center gap-4 text-black bg-dark-gray font-semibold w-11/12 justify-center mx-5;
+}
+.container__paymentmethods .modul__gopay {
+  @apply bg-white rounded-t-3xl fixed bottom-0 flex left-0 right-0;
+}
+.container__paymentmethods .btn__gopayment {
+  @apply flex items-center mx-10 text-center w-full p-0 bg-black font-semibold h-12  justify-center shadow-md;
+}/*# sourceMappingURL=styles.css.map */

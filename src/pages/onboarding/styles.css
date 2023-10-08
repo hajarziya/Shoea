@@ -1,0 +1,86 @@
+.loader {
+  border: 4px solid rgb(0, 0, 0); /* Light grey */
+  border-top: 4px solid #f3f3f3; /* Blue */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 2s linear infinite;
+}
+
+.container {
+  @apply bg-white w-[428px] h-[928px] flex flex-col justify-around items-center text-center mx-auto my-3 pt-48;
+}
+.container .logo__wrapper {
+  @apply bg-white flex;
+}
+.container .logo__wrapper .logo {
+  @apply bg-black w-10 h-10 border rounded-full p-1;
+}
+.container .logo__wrapper .title {
+  @apply text-4xl font-bold ml-2;
+}
+
+.container_bg_2 {
+  @apply bg-white flex flex-col items-start  mx-auto relative hidden;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%), url("../../img/bgpagetwo.png");
+  height: 829px;
+  background-size: cover;
+  color: white;
+  padding: 20px;
+}
+.container_bg_2 .wrapper__text {
+  @apply absolute bottom-20 left-3 flex flex-col gap-1;
+}
+.container_bg_2 .wrapper__text .wellcome {
+  @apply text-[40px];
+}
+.container_bg_2 .wrapper__text .title {
+  @apply text-[72px] font-bold;
+}
+.container_bg_2 .wrapper__text p {
+  @apply text-sm;
+}
+.container_bg_2 .right__icon {
+  @apply absolute bottom-3 right-2;
+}
+
+.container_three {
+  @apply bg-white w-[428px] flex flex-col justify-around items-center text-center mx-auto my-3 gap-4 hidden;
+}
+.container_three img {
+  @apply w-fit;
+}
+.container_three p {
+  @apply text-3xl p-5;
+}
+.container_three button {
+  @apply bg-dark-blue text-white  px-40 py-3 border rounded-3xl mb-5 mt-4;
+}
+.container_three .mySlides {
+  display: none;
+}
+.container_three .dot {
+  cursor: pointer;
+  height: 3px;
+  width: 20px;
+  background-color: #606060;
+  border-radius: 2px;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.container_three .active,
+.container_three .dot:hover {
+  background-color: #2f2f2f;
+}
+.container_three .fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,90 @@
+.container__home {
+  @apply relative bg-white flex flex-col mx-auto pb-20;
+}
+.container__home .header {
+  @apply flex justify-between my-4 mx-3;
+}
+.container__home .header .profile__wrapper {
+  @apply flex justify-between;
+}
+.container__home .header .profile__wrapper .profile__img {
+  @apply border rounded-full w-12 h-12;
+}
+.container__home .header .profile__wrapper .profile__message {
+  @apply text-base text-dark-gray p-0 ml-3;
+}
+.container__home .header .profile__wrapper .profile__name {
+  @apply font-bold text-base ml-3;
+}
+.container__home .header .bellheart__wrapper {
+  @apply flex m-3 gap-1;
+}
+
+.search__box {
+  @apply flex justify-start items-center gap-1 bg-light-gray px-3 py-2 mx-5 mb-4;
+}
+.search__box .input {
+  @apply w-full bg-transparent;
+}
+
+.barand__container {
+  @apply grid grid-rows-2 grid-flow-col gap-10 mx-5 my-3;
+}
+.barand__container .barand-wrapper {
+  @apply w-20 justify-center items-center flex flex-col;
+}
+.barand__container .barand-wrapper .barand_img {
+  @apply w-14 h-14 border-none rounded-full bg-bg-gray flex justify-center text-center items-center;
+}
+.barand__container .barand-wrapper .barand_name {
+  @apply text-sm font-semibold ml-2 mt-2;
+}
+
+.btn__title {
+  @apply flex justify-between mx-6 mt-2;
+}
+.btn__title .popular {
+  @apply p-0 flex-nowrap bg-white text-dark-blue border-none font-semibold text-lg;
+}
+.btn__title .seeall {
+  @apply p-0 bg-white text-dark-blue border-none text-base font-semibold;
+}
+
+.btns__container {
+  @apply flex gap-2 px-4 my-4 overflow-scroll;
+}
+.btns__container .btn_barand {
+  @apply bg-transparent text-dark-blue border-dark-blue border-2 px-4 py-0 h-fit rounded-2xl;
+}
+.btns__container .btn_barand.active {
+  @apply bg-dark-blue text-white;
+}
+
+.container__products {
+  @apply flex flex-wrap gap-3 mb-7;
+}
+.container__products .product {
+  @apply flex flex-col mx-auto;
+}
+.container__products .product .img_wrapper {
+  @apply w-40 h-40 bg-bg-product rounded-3xl p-3;
+}
+.container__products .product .product_name {
+  @apply font-semibold text-lg;
+}
+.container__products .product .product_price {
+  @apply p-0 text-base;
+}
+
+.footer {
+  @apply flex w-full pt-5 p-3 justify-around fixed bottom-0 bg-white;
+}
+.footer .icon__footer-wrapper {
+  @apply flex flex-col gap-1 text-center items-center;
+}
+.footer .icon__footer-wrapper .imgicon {
+  @apply w-6 h-6;
+}
+.footer .icon__footer-wrapper .nameicon {
+  @apply text-xs font-semibold;
+}/*# sourceMappingURL=styles.css.map */

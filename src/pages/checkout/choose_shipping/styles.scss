@@ -1,0 +1,46 @@
+.container__shippingaddress {
+  @apply relative bg-bg-product pb-40 relative py-10;
+
+  .header {
+    @apply flex items-center gap-3 px-5;
+    .header__logo {
+      @apply h-6 w-6;
+    }
+    .header__name {
+      @apply text-lg font-semibold;
+    }
+  }
+
+  .shipping__address--container {
+    .address__box {
+      @apply flex mt-5 mx-auto bg-white gap-3 p-4 rounded-lg items-center mx-5;
+      .location__icon--wrapper {
+        @apply flex w-12 h-12 bg-bg-product rounded-full items-center justify-center;
+        .location__icon {
+          @apply text-white bg-dark-blue p-2 rounded-full;
+        }
+      }
+      .location__wrapper {
+        .location__name {
+          @apply font-semibold text-base;
+        }
+        .location__address {
+          @apply text-xs text-gray-500;
+        }
+      }
+      .price {
+        @apply font-semibold;
+      }
+      .checkbox {
+        @apply ml-16;
+      }
+    }
+  }
+
+  .modul__gopay {
+    @apply bg-gray-50 border-gray-100 rounded-t-3xl fixed bottom-0 flex w-full;
+  }
+  .btn__gopayment {
+    @apply w-11/12 flex items-center  text-center  bg-black font-semibold h-12  justify-center mx-5;
+  }
+}

@@ -1,0 +1,42 @@
+.container__shippingaddress {
+  @apply relative bg-bg-product pb-10 relative py-10;
+}
+.container__shippingaddress .header {
+  @apply flex items-center gap-3 px-5;
+}
+.container__shippingaddress .header .header__logo {
+  @apply h-6 w-6;
+}
+.container__shippingaddress .header .header__name {
+  @apply text-lg font-semibold;
+}
+.container__shippingaddress .shipping__address--container .address__box {
+  @apply flex mt-5 mx-auto bg-white gap-3 p-4 rounded-lg items-center mx-5;
+}
+.container__shippingaddress .shipping__address--container .address__box .location__icon--wrapper {
+  @apply flex w-12 h-12 bg-bg-product rounded-full items-center justify-center;
+}
+.container__shippingaddress .shipping__address--container .address__box .location__icon--wrapper .location__icon {
+  @apply text-white bg-dark-blue p-2 rounded-full;
+}
+.container__shippingaddress .shipping__address--container .address__box .location__wrapper .location__name {
+  @apply font-semibold text-base;
+}
+.container__shippingaddress .shipping__address--container .address__box .location__wrapper .location__address {
+  @apply text-xs text-gray-500;
+}
+.container__shippingaddress .shipping__address--container .address__box .checkbox {
+  @apply ml-16;
+}
+.container__shippingaddress .line {
+  @apply mx-5;
+}
+.container__shippingaddress .btn__addaddaress {
+  @apply mt-10 px-20 flex items-center gap-4 text-black bg-dark-gray font-semibold w-11/12 justify-center mx-5;
+}
+.container__shippingaddress .modul__gopay {
+  @apply bg-gray-50 border-gray-100 rounded-t-3xl fixed bottom-0 flex w-full;
+}
+.container__shippingaddress .btn__gopayment {
+  @apply w-11/12 flex items-center  text-center  bg-black font-semibold h-12  justify-center mx-5;
+}/*# sourceMappingURL=styles.css.map */

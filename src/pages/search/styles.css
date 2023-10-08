@@ -1,0 +1,65 @@
+.container__search {
+  @apply p-5;
+}
+.container__search .search__box {
+  @apply flex justify-between items-center gap-1 bg-bg-product px-3 py-2 w-full mx-auto mb-4;
+}
+.container__search .search__box .search__left {
+  @apply flex items-center gap-2;
+}
+.container__search .search__box .search__left .input {
+  @apply w-full bg-transparent pl-3;
+}
+.container__search .results__info {
+  @apply flex justify-between font-semibold text-sm items-center;
+}
+.container__search .results__info .clearall {
+  @apply bg-white text-black p-0 border-none;
+}
+.container__search .notfound {
+  @apply flex flex-col justify-center items-center text-center mt-12;
+}
+.container__search .notfound .img__notfound {
+  @apply w-52 h-52;
+}
+.container__search .notfound .notfound {
+  @apply font-semibold text-xl;
+}
+.container__search .notfound .discription {
+  @apply text-sm text-center w-80;
+}
+.container__search .container__products {
+  @apply flex flex-wrap gap-3 my-7;
+}
+.container__search .container__products .product {
+  @apply flex flex-col mx-auto;
+}
+.container__search .container__products .product .img_wrapper {
+  @apply w-40 h-40 bg-bg-product rounded-3xl p-3;
+}
+.container__search .container__products .product .product_name {
+  @apply font-semibold text-lg;
+}
+.container__search .container__products .product .sold__wrapper {
+  @apply flex gap-2 my-1;
+}
+.container__search .container__products .product .sold__wrapper .star__icon {
+  @apply w-5 h-5;
+}
+.container__search .container__products .product .sold__wrapper .num_star {
+  @apply text-gray-500 border-r-2 pr-2 text-sm flex items-center;
+}
+.container__search .container__products .product .sold__wrapper .sold {
+  @apply bg-bg-product px-2 py-1 rounded-lg text-xs font-semibold;
+}
+.container__search .container__products .product .product_price {
+  @apply p-0 text-lg font-semibold;
+}
+.container__search .recent__wrapper {
+  @apply my-2 flex items-center justify-between;
+}
+.container__search .recent__wrapper .delete__recent {
+  @apply w-5 h-5 flex items-center justify-center;
+  border: 0.5px solid black;
+  border-radius: 5px;
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,157 @@
+.mycart__overlayer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  display: block;
+}
+
+.container__cart {
+  @apply bg-bg-product pb-10 relative;
+}
+.container__cart .header {
+  @apply flex pt-10 pb-4 mx-3 justify-between;
+}
+.container__cart .header .header__left {
+  @apply flex items-center gap-3;
+}
+.container__cart .header .header__left .header__logo {
+  @apply h-6 w-6;
+}
+.container__cart .header .header__left .header__name {
+  @apply text-lg font-semibold;
+}
+.container__cart .header .search__icon {
+  @apply mr-7;
+}
+.container__cart .container__products .product__box {
+  @apply flex bg-white m-4 rounded w-full gap-3 p-4;
+}
+.container__cart .container__products .product__box .product__img {
+  @apply w-24 h-24 bg-bg-product rounded-xl p-3;
+}
+.container__cart .container__products .product__box .product__detail {
+  @apply flex flex-col gap-3 w-fit;
+}
+.container__cart .container__products .product__box .product__detail .nameanddelete {
+  @apply flex justify-between gap-20;
+}
+.container__cart .container__products .product__box .product__detail .nameanddelete .name {
+  @apply font-semibold text-base;
+}
+.container__cart .container__products .product__box .product__detail .nameanddelete .delete__icon {
+  @apply h-5 w-5;
+}
+.container__cart .container__products .product__box .product__detail .nameandcolor__pro {
+  @apply flex flex-col gap-3;
+}
+.container__cart .container__products .product__box .product__detail .nameandcolor__pro .color {
+  @apply flex items-center gap-2;
+}
+.container__cart .container__products .product__box .product__detail .nameandcolor__pro .color .color__show {
+  @apply w-4 h-4 border rounded-full bg-slate-500;
+}
+.container__cart .container__products .product__box .product__detail .nameandcolor__pro .color .color__name {
+  @apply text-xs text-gray-500;
+}
+.container__cart .container__products .product__box .product__detail .priceandreview {
+  @apply flex text-center items-center gap-24 justify-between;
+}
+.container__cart .container__products .product__box .product__detail .priceandreview .price {
+  @apply font-semibold text-lg;
+}
+.container__cart .container__products .product__box .product__detail .priceandreview .quantity__box {
+  @apply flex text-center items-center bg-bg-product h-8 rounded-3xl;
+}
+.container__cart .container__products .product__box .product__detail .priceandreview .quantity__box .btn__quantity {
+  @apply w-8 h-8 p-0 bg-transparent text-dark-blue  text-2xl border-none;
+}
+.container__cart .totalprice__box {
+  @apply bg-white fixed bottom-20 w-full flex justify-between p-5  rounded-t-3xl hidden;
+  border: 1px solid rgb(235, 235, 235);
+  border-bottom: 0.5px solid rgb(240, 240, 240);
+}
+.container__cart .totalprice__box .price__wrapper {
+  @apply flex flex-col;
+}
+.container__cart .totalprice__box .price__wrapper .total {
+  @apply text-slate-500;
+}
+.container__cart .totalprice__box .price__wrapper .total__num {
+  @apply text-2xl font-bold;
+}
+.container__cart .totalprice__box .btn__checkout {
+  @apply font-semibold h-16 rounded-full;
+}
+.container__cart .footer {
+  @apply flex w-full pt-5 p-3 justify-around fixed bottom-0 bg-white hidden;
+}
+.container__cart .footer .icon__footer-wrapper {
+  @apply flex flex-col gap-1 text-center items-center;
+}
+.container__cart .footer .icon__footer-wrapper .imgicon {
+  @apply w-6 h-6;
+}
+.container__cart .footer .icon__footer-wrapper .nameicon {
+  @apply text-xs font-semibold;
+}
+.container__cart .remove__box {
+  @apply flex flex-col bg-white rounded-t-3xl fixed bottom-0;
+}
+.container__cart .remove__box .remove__title {
+  @apply text-lg font-semibold mx-auto my-5;
+}
+.container__cart .remove__box .delete__product--box .product__box {
+  @apply flex bg-white m-4 rounded w-full gap-3 p-4;
+}
+.container__cart .remove__box .delete__product--box .product__box .product__img {
+  @apply w-24 h-24 bg-bg-product rounded-xl p-3;
+}
+.container__cart .remove__box .delete__product--box .product__box .product__detail {
+  @apply flex flex-col gap-3 w-fit;
+}
+.container__cart .remove__box .delete__product--box .product__box .product__detail .nameanddelete {
+  @apply flex justify-between gap-20;
+}
+.container__cart .remove__box .delete__product--box .product__box .product__detail .nameanddelete .name {
+  @apply font-semibold text-base;
+}
+.container__cart .remove__box .delete__product--box .product__box .product__detail .nameanddelete .delete__icon {
+  @apply h-5 w-5;
+}
+.container__cart .remove__box .delete__product--box .product__box .product__detail .nameandcolor__pro {
+  @apply flex flex-col gap-3;
+}
+.container__cart .remove__box .delete__product--box .product__box .product__detail .nameandcolor__pro .color {
+  @apply flex items-center gap-2;
+}
+.container__cart .remove__box .delete__product--box .product__box .product__detail .nameandcolor__pro .color .color__show {
+  @apply w-4 h-4 border rounded-full bg-slate-500;
+}
+.container__cart .remove__box .delete__product--box .product__box .product__detail .nameandcolor__pro .color .color__name {
+  @apply text-xs text-gray-500;
+}
+.container__cart .remove__box .delete__product--box .product__box .product__detail .priceandreview {
+  @apply flex text-center items-center gap-24 justify-between;
+}
+.container__cart .remove__box .delete__product--box .product__box .product__detail .priceandreview .price {
+  @apply font-semibold text-lg;
+}
+.container__cart .remove__box .delete__product--box .product__box .product__detail .priceandreview .quantity__box {
+  @apply flex text-center items-center bg-bg-product h-8 rounded-3xl;
+}
+.container__cart .remove__box .delete__product--box .product__box .product__detail .priceandreview .quantity__box .btn__quantity {
+  @apply w-8 h-8 p-0 bg-transparent text-dark-blue  text-2xl border-none;
+}
+.container__cart .remove__box .btns__box {
+  @apply flex justify-between px-5;
+}
+.container__cart .remove__box .btns__box .cancle {
+  @apply px-5 w-44 bg-bg-product text-dark-blue font-semibold;
+}
+.container__cart .remove__box .btns__box .remove {
+  @apply px-5 w-44;
+}/*# sourceMappingURL=styles.css.map */

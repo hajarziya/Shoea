@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  @apply bg-slate-400;
+}
+
+.container__login {
+  @apply relative bg-white w-[428px] h-[928px] flex flex-col justify-around items-center text-center mx-auto my-3 gap-20;
+}
+.container__login .prev__icon {
+  @apply absolute top-2 left-2;
+}
+.container__login .logo {
+  @apply w-14 h-20 mt-32;
+}
+.container__login .wrapper__inputs {
+  @apply mb-24;
+}
+.container__login .wrapper__inputs .login__text {
+  @apply text-3xl;
+}
+.container__login .wrapper__inputs .email__box {
+  @apply mt-6 flex justify-start items-center gap-1 bg-light-gray px-3 py-2 w-80;
+}
+.container__login .wrapper__inputs .email__box .input {
+  @apply w-full bg-transparent;
+}
+.container__login .wrapper__inputs .password__box {
+  @apply mt-3 flex justify-start items-center gap-1 bg-light-gray px-3 py-2 w-80;
+}
+.container__login .wrapper__inputs .password__box .input {
+  @apply w-full bg-transparent;
+}
+.container__login .wrapper__inputs .password__box .show__icon {
+  @apply bg-white;
+}
+.container__login .wrapper__inputs .btn__singin {
+  @apply bg-zinc-500 text-white  px-40 py-3 border rounded-3xl mb-5 mt-4;
+}
+.container__login .check__container {
+  @apply block relative cursor-pointer pl-7 m-5;
+}
+.container__login .check__container .checkmark {
+  @apply absolute left-16  w-6 h-6 bg-gray-100 rounded;
+}
+.container__login .check__container .checkmark:after {
+  @apply hidden ml-2 mt-0.5 w-2 h-4 border-solid border-white border-b-2 border-r-2 rotate-45;
+  content: "";
+}
+.container__login .check__container .checkbox_input {
+  @apply absolute opacity-0 cursor-pointer w-0 h-0;
+}
+.container__login .check__container .checkbox_input:checked ~ .checkmark {
+  @apply bg-dark-blue;
+}
+.container__login .check__container .checkbox_input:checked ~ .checkmark:after {
+  @apply block;
+} /*# sourceMappingURL=input.css.map */

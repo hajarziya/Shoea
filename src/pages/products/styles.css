@@ -1,0 +1,13 @@
+body {
+  @apply bg-white;
+}
+
+.products__container {
+  @apply bg-white;
+}
+.products__container .title__page--box {
+  @apply flex text-center items-center gap-2 mx-6 my-3;
+}
+.products__container .title__page--box .title__page {
+  @apply text-lg font-semibold;
+}/*# sourceMappingURL=styles.css.map */

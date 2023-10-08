@@ -1,0 +1,126 @@
+.container__chechout {
+  @apply relative bg-bg-product pb-10 relative;
+}
+.container__chechout .header {
+  @apply flex pt-10 pb-4 mx-3 justify-between;
+}
+.container__chechout .header .header__left {
+  @apply flex items-center gap-3;
+}
+.container__chechout .header .header__left .header__logo {
+  @apply h-6 w-6;
+}
+.container__chechout .header .header__left .header__name {
+  @apply text-lg font-semibold;
+}
+.container__chechout .header .more__icon {
+  @apply mr-5 h-5 w-8;
+}
+.container__chechout .shipping__address--container .address__box {
+  @apply flex bg-white m-5 gap-3 p-4 rounded-lg items-center;
+}
+.container__chechout .shipping__address--container .address__box .location__icon--wrapper {
+  @apply flex w-12 h-12 bg-bg-product rounded-full items-center justify-center;
+}
+.container__chechout .shipping__address--container .address__box .location__icon--wrapper .location__icon {
+  @apply text-white bg-dark-blue p-2 rounded-full;
+}
+.container__chechout .shipping__address--container .address__box .location__wrapper .location__name {
+  @apply font-semibold text-base;
+}
+.container__chechout .shipping__address--container .address__box .location__wrapper .location__address {
+  @apply text-xs text-gray-500;
+}
+.container__chechout .shipping__address--container .address__box .edit__icon {
+  @apply h-5 ml-16;
+}
+.container__chechout .line {
+  @apply mx-5;
+}
+.container__chechout .container__orderlist .title__order {
+  @apply m-5 font-semibold text-lg;
+}
+.container__chechout .container__orderlist .product__box {
+  @apply flex bg-white m-4 rounded w-fit gap-3 p-4;
+}
+.container__chechout .container__orderlist .product__box .product__img {
+  @apply w-24 h-24 bg-bg-product rounded-xl p-3;
+}
+.container__chechout .container__orderlist .product__box .product__detail {
+  @apply flex flex-col gap-3 w-fit;
+}
+.container__chechout .container__orderlist .product__box .product__detail .nameanddelete {
+  @apply flex justify-between gap-20;
+}
+.container__chechout .container__orderlist .product__box .product__detail .nameanddelete .name {
+  @apply font-semibold text-base;
+}
+.container__chechout .container__orderlist .product__box .product__detail .nameanddelete .delete__icon {
+  @apply h-5 w-5;
+}
+.container__chechout .container__orderlist .product__box .product__detail .nameandcolor__pro {
+  @apply flex flex-col gap-3;
+}
+.container__chechout .container__orderlist .product__box .product__detail .nameandcolor__pro .color {
+  @apply flex items-center gap-2;
+}
+.container__chechout .container__orderlist .product__box .product__detail .nameandcolor__pro .color .color__show {
+  @apply w-4 h-4 border rounded-full bg-slate-500;
+}
+.container__chechout .container__orderlist .product__box .product__detail .nameandcolor__pro .color .color__name {
+  @apply text-xs text-gray-500;
+}
+.container__chechout .container__orderlist .product__box .product__detail .priceandreview {
+  @apply flex text-center items-center gap-24 justify-between;
+}
+.container__chechout .container__orderlist .product__box .product__detail .priceandreview .price {
+  @apply font-semibold text-lg;
+}
+.container__chechout .container__orderlist .product__box .product__detail .priceandreview .quantity__box {
+  @apply flex text-center items-center bg-bg-product h-8 w-8 rounded-full justify-center;
+}
+.container__chechout .choosing__shipping {
+  @apply m-5;
+}
+.container__chechout .choosing__shipping .shipping__title {
+  @apply font-semibold text-lg;
+}
+.container__chechout .choosing__shipping .shipping__box {
+  @apply flex bg-white rounded-3xl p-5 items-center gap-4 mt-5;
+}
+.container__chechout .choosing__shipping .shipping__box .shipping__text {
+  @apply font-semibold mr-12 pl-3;
+}
+.container__chechout .promo__container {
+  @apply m-5;
+}
+.container__chechout .promo__container .promo__title {
+  @apply font-semibold text-lg mb-5;
+}
+.container__chechout .promo__container .promo__box {
+  @apply flex justify-between;
+}
+.container__chechout .promo__container .promo__box .promo {
+  @apply h-12 rounded-2xl w-full pl-5;
+}
+.container__chechout .promo__container .promo__box .discountoff {
+  @apply bg-dark-blue text-white font-semibold rounded-3xl px-9 flex items-center;
+}
+.container__chechout .promo__container .promo__box .btn__add {
+  @apply px-0 m-0 w-14 h-12 rounded-full text-2xl justify-center items-center flex;
+}
+.container__chechout .promo__container .total__price {
+  @apply flex flex-col bg-white rounded-3xl mt-5 mb-24;
+}
+.container__chechout .promo__container .total__price .amount__wrapper {
+  @apply p-5 justify-between flex text-gray-500;
+}
+.container__chechout .promo__container .total__price .amount__wrapper .num__amount {
+  @apply text-dark-blue;
+}
+.container__chechout .modul__gopay {
+  @apply bg-white rounded-t-3xl fixed bottom-0 flex w-full justify-center;
+}
+.container__chechout .btn__gopayment {
+  @apply px-20 flex items-center gap-4 bg-black font-semibold;
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,180 @@
+.mycart__overlayer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  display: block;
+}
+
+.container__cart {
+  @apply bg-bg-product pb-10 relative;
+  .header {
+    @apply flex pt-10 pb-4 mx-3 justify-between;
+    .header__left {
+      @apply flex items-center gap-3;
+      .header__logo {
+        @apply h-6 w-6;
+      }
+      .header__name {
+        @apply text-lg font-semibold;
+      }
+    }
+    .icons {
+      @apply flex gap-4 items-center;
+      .icon__more {
+        font-size: 20px;
+      }
+      .search__icon {
+        @apply mr-7;
+      }
+    }
+  }
+  .btn__orders {
+    @apply flex justify-between mx-5;
+    .active {
+      @apply bg-transparent px-4 rounded-none w-1/2 text-black border-none p-0 font-semibold;
+      border-bottom: 2px solid black;
+    }
+    .completed {
+      @apply bg-transparent px-4 rounded-none w-1/2 text-black  border-none p-0 font-semibold;
+      border-bottom: 2px solid rgb(195, 195, 195);
+    }
+  }
+  .container__products {
+    .product__box {
+      @apply flex bg-white m-4 rounded w-full gap-3 p-4;
+      .product__img {
+        @apply w-24 h-24 bg-bg-product rounded-xl p-3;
+      }
+      .product__detail {
+        @apply flex flex-col gap-3 w-fit;
+        .nameanddelete {
+          @apply flex justify-between gap-20;
+          .name {
+            @apply font-semibold text-base;
+          }
+          .delete__icon {
+            @apply h-5 w-5;
+          }
+        }
+        .nameandcolor__pro {
+          @apply flex flex-col gap-3;
+          .color {
+            @apply flex items-center gap-2;
+            .color__show {
+              @apply w-4 h-4 border rounded-full bg-slate-500;
+            }
+            .color__name {
+              @apply text-xs text-gray-500;
+            }
+          }
+        }
+        .priceandreview {
+          @apply flex text-center items-center gap-24 justify-between;
+          .price {
+            @apply font-semibold text-lg;
+          }
+          .quantity__box {
+            @apply flex text-center items-center bg-bg-product h-8 rounded-3xl;
+            .btn__quantity {
+              @apply w-8 h-8 p-0 bg-transparent text-dark-blue  text-2xl border-none;
+            }
+          }
+        }
+      }
+    }
+  }
+  .totalprice__box {
+    @apply bg-white fixed bottom-20 w-full flex justify-between p-5  rounded-t-3xl hidden;
+    border: 1px solid rgb(235, 235, 235);
+    border-bottom: 0.5px solid rgb(240, 240, 240);
+    .price__wrapper {
+      @apply flex flex-col;
+      .total {
+        @apply text-slate-500;
+      }
+      .total__num {
+        @apply text-2xl font-bold;
+      }
+    }
+    .btn__checkout {
+      @apply font-semibold h-16 rounded-full;
+    }
+  }
+
+  .footer {
+    @apply flex w-full pt-5 p-3 justify-around fixed bottom-0 bg-white;
+
+    .icon__footer-wrapper {
+      @apply flex flex-col gap-1 text-center items-center;
+      .imgicon {
+        @apply w-6 h-6;
+      }
+      .nameicon {
+        @apply text-xs font-semibold;
+      }
+    }
+  }
+  .remove__box {
+    @apply flex flex-col bg-white rounded-t-3xl fixed bottom-0;
+    .remove__title {
+      @apply text-lg font-semibold mx-auto my-5;
+    }
+    .delete__product--box {
+      .product__box {
+        @apply flex bg-white m-4 rounded w-full gap-3 p-4 justify-between;
+        .product__img {
+          @apply w-24 h-24 bg-bg-product rounded-xl p-3;
+        }
+        .product__detail {
+          @apply flex flex-col gap-3 w-fit;
+          .nameanddelete {
+            @apply flex justify-between gap-20;
+            .name {
+              @apply font-semibold text-base;
+            }
+            .delete__icon {
+              @apply h-5 w-5;
+            }
+          }
+          .nameandcolor__pro {
+            @apply flex flex-col gap-3;
+            .color {
+              @apply flex items-center gap-2;
+              .color__show {
+                @apply w-4 h-4 border rounded-full bg-slate-500;
+              }
+              .color__name {
+                @apply text-xs text-gray-500;
+              }
+            }
+          }
+          .priceandreview {
+            @apply flex text-center items-center gap-24 justify-between;
+            .price {
+              @apply font-semibold text-lg;
+            }
+            .quantity__box {
+              @apply flex text-center items-center bg-bg-product h-8 rounded-3xl;
+              .btn__quantity {
+                @apply w-8 h-8 p-0 bg-transparent text-dark-blue  text-2xl border-none;
+              }
+            }
+          }
+        }
+      }
+    }
+    .btns__box {
+      @apply flex justify-between px-5;
+      .cancle {
+        @apply px-5 w-44 bg-bg-product text-dark-blue font-semibold;
+      }
+      .remove {
+        @apply px-5 w-44;
+      }
+    }
+  }
+}

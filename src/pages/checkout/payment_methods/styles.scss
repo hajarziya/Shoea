@@ -1,0 +1,58 @@
+.container__paymentmethods {
+  @apply relative bg-bg-product pb-32 py-10 px-5;
+
+  .header {
+    @apply flex items-center justify-between w-full;
+    .header__left {
+      @apply flex items-center;
+      .header__logo {
+        @apply h-6 w-6;
+      }
+      .header__name {
+        @apply text-lg font-semibold;
+      }
+    }
+    .icon_box {
+      border: 2px solid black;
+      @apply rounded-md flex items-center;
+    }
+  }
+  .select__title {
+    @apply text-gray-500 text-xs my-6;
+  }
+
+  .payment__methods--wrapper {
+    .payment__box {
+      @apply flex mt-5 mx-auto bg-white gap-3 p-4 rounded-lg items-center justify-between;
+      .part__left {
+        @apply flex items-center;
+        .payment__icon {
+          @apply w-7;
+        }
+        .location__wrapper {
+          .location__name {
+            @apply font-semibold text-base;
+          }
+          .location__address {
+            @apply text-xs text-gray-500;
+          }
+        }
+      }
+      .checkbox {
+        @apply ml-16;
+      }
+    }
+  }
+  .line {
+    @apply mx-5;
+  }
+  .btn__addaddaress {
+    @apply mt-10 px-20 flex items-center gap-4 text-black bg-dark-gray font-semibold w-11/12 justify-center mx-5;
+  }
+  .modul__gopay {
+    @apply bg-white rounded-t-3xl fixed bottom-0 flex left-0 right-0;
+  }
+  .btn__gopayment {
+    @apply flex items-center mx-10 text-center w-full p-0 bg-black font-semibold h-12  justify-center shadow-md;
+  }
+}

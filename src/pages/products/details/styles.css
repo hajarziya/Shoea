@@ -1,0 +1,102 @@
+.detail__container .gallery {
+  @apply relative;
+}
+.detail__container .gallery .detail__img {
+  @apply w-full bg-bg-product px-12 py-5;
+}
+.detail__container .gallery .prev__icon {
+  @apply absolute top-2 left-2;
+}
+.detail__container .gallery .dots {
+  @apply flex gap-1 top-80 left-40 absolute;
+}
+.detail__container .gallery .dots .dot__active {
+  @apply w-6 h-2 bg-dark-blue rounded-2xl;
+}
+.detail__container .gallery .dots .dot__inactive {
+  @apply w-2 h-2 rounded-full bg-dark-gray;
+}
+.detail__container .detail__title--box {
+  @apply flex justify-between m-5 mb-2;
+}
+.detail__container .detail__title--box .name__product {
+  @apply font-semibold text-2xl;
+}
+.detail__container .detail__title--box .like {
+  @apply w-8 h-8;
+}
+.detail__container .soldandreview__wrapper {
+  @apply flex ml-5 gap-14;
+}
+.detail__container .soldandreview__wrapper .sold {
+  @apply text-xs bg-bg-gray p-2 rounded-lg;
+}
+.detail__container .soldandreview__wrapper .reviews {
+  @apply flex items-center gap-3 text-sm;
+}
+.detail__container .line {
+  @apply w-11/12 bg-bg-product mx-auto my-3;
+}
+.detail__container .description__wrapper {
+  @apply ml-5;
+}
+.detail__container .description__wrapper .description__title {
+  @apply text-base font-semibold;
+}
+.detail__container .description__wrapper .description {
+  @apply p-0 text-xs text-gray-600 my-2;
+}
+.detail__container .sizeandcolor__wrapper {
+  @apply flex mt-5 gap-7;
+}
+.detail__container .sizeandcolor__wrapper .sizes {
+  @apply flex gap-2 ml-5 flex-col;
+}
+.detail__container .sizeandcolor__wrapper .sizes .sizes__title {
+  @apply text-base font-semibold;
+}
+.detail__container .sizeandcolor__wrapper .sizes .sizes__wrapper {
+  @apply flex gap-2;
+}
+.detail__container .sizeandcolor__wrapper .sizes .sizes__wrapper .sizenumber {
+  @apply border rounded-full w-11 h-11 flex text-center items-center justify-center ring-dark-gray ring-2 text-dark-gray;
+}
+.detail__container .sizeandcolor__wrapper .colors {
+  @apply flex flex-col gap-2;
+}
+.detail__container .sizeandcolor__wrapper .colors .colors__title {
+  @apply text-base font-semibold;
+}
+.detail__container .sizeandcolor__wrapper .colors .colors__wrapper {
+  @apply flex gap-2;
+}
+.detail__container .sizeandcolor__wrapper .colors .colors__wrapper .color {
+  @apply w-12 h-12 rounded-full bg-black;
+}
+.detail__container .quantity__wrapper {
+  @apply flex mt-5 ml-5 text-center items-center gap-3;
+}
+.detail__container .quantity__wrapper .quantity {
+  @apply text-base font-semibold;
+}
+.detail__container .quantity__wrapper .quantity__box {
+  @apply flex text-center items-center bg-bg-product h-10 rounded-3xl;
+}
+.detail__container .quantity__wrapper .quantity__box .btn__quantity {
+  @apply w-10 h-10 p-0 bg-transparent text-dark-blue  text-2xl border-none;
+}
+.detail__container .price__container {
+  @apply flex justify-between mx-5 text-center items-center;
+}
+.detail__container .price__container .price__box {
+  @apply bg-white;
+}
+.detail__container .price__container .price__box .price__title {
+  @apply text-xs text-gray-500;
+}
+.detail__container .price__container .price__box .price__num {
+  @apply text-lg;
+}
+.detail__container .price__container .btn__price {
+  @apply flex py-3 px-16 gap-2 text-center items-center;
+}/*# sourceMappingURL=styles.css.map */

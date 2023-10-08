@@ -1,0 +1,67 @@
+.container__search {
+  @apply p-5;
+  .search__box {
+    @apply flex justify-between items-center gap-1 bg-bg-product px-3 py-2 w-full mx-auto mb-4;
+    .search__left {
+      @apply flex items-center gap-2;
+      .input {
+        @apply w-full bg-transparent pl-3;
+      }
+    }
+  }
+  .results__info {
+    @apply flex justify-between font-semibold text-sm items-center;
+    .clearall {
+      @apply bg-white text-black p-0 border-none;
+    }
+  }
+  .notfound {
+    @apply flex flex-col justify-center items-center text-center mt-12;
+    .img__notfound {
+      @apply w-52 h-52;
+    }
+
+    .notfound {
+      @apply font-semibold text-xl;
+    }
+    .discription {
+      @apply text-sm text-center w-80;
+    }
+  }
+
+  .container__products {
+    @apply flex flex-wrap gap-3 my-7;
+    .product {
+      @apply flex flex-col mx-auto;
+      .img_wrapper {
+        @apply w-40 h-40 bg-bg-product rounded-3xl p-3;
+      }
+      .product_name {
+        @apply font-semibold text-lg;
+      }
+      .sold__wrapper {
+        @apply flex gap-2 my-1;
+        .star__icon {
+          @apply w-5 h-5;
+        }
+        .num_star {
+          @apply text-gray-500 border-r-2 pr-2 text-sm flex items-center;
+        }
+        .sold {
+          @apply bg-bg-product px-2 py-1 rounded-lg text-xs font-semibold;
+        }
+      }
+      .product_price {
+        @apply p-0 text-lg font-semibold;
+      }
+    }
+  }
+  .recent__wrapper {
+    @apply my-2 flex items-center justify-between;
+    .delete__recent {
+      @apply w-5 h-5 flex items-center justify-center;
+      border: 0.5px solid black;
+      border-radius: 5px;
+    }
+  }
+}
