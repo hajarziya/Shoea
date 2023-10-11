@@ -1,9 +1,16 @@
-.container__chechout {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container__checkout {
   @apply relative bg-bg-product pb-10 relative;
   .header {
     @apply flex pt-10 pb-4 mx-3 justify-between;
     .header__left {
-      @apply flex items-center gap-3;
+      @apply flex items-center gap-3 text-center;
+      .back__btn{
+        @apply mt-1;
+      }
       .header__logo {
         @apply h-6 w-6;
       }
@@ -17,7 +24,10 @@
   }
   .shipping__address--container {
     .address__box {
-      @apply flex bg-white m-5 gap-3 p-4 rounded-lg items-center;
+      @apply flex bg-white m-5 gap-3 p-4 rounded-lg items-center justify-between;
+      .address__box_left {
+        @apply flex gap-4
+      }
       .location__icon--wrapper {
         @apply flex w-12 h-12 bg-bg-product rounded-full items-center justify-center;
         .location__icon {
@@ -40,26 +50,25 @@
   .line {
     @apply mx-5;
   }
+  .title__order {
+    @apply m-5 font-semibold text-lg;
+  }
 
   .container__orderlist {
-    .title__order {
-      @apply m-5 font-semibold text-lg;
-    }
+    @apply flex flex-col;
     .product__box {
-      @apply flex bg-white m-4 rounded w-fit gap-3 p-4;
+      @apply flex bg-white mx-4 rounded  gap-10 p-5;
       .product__img {
-        @apply w-24 h-24 bg-bg-product rounded-xl p-3;
+        @apply w-28 h-28 bg-bg-product rounded-xl p-3;
       }
       .product__detail {
-        @apply flex flex-col gap-3 w-fit;
+        @apply flex flex-col gap-3 w-full;
         .nameanddelete {
           @apply flex justify-between gap-20;
           .name {
             @apply font-semibold text-base;
           }
-          .delete__icon {
-            @apply h-5 w-5;
-          }
+
         }
         .nameandcolor__pro {
           @apply flex flex-col gap-3;
@@ -74,7 +83,7 @@
           }
         }
         .priceandreview {
-          @apply flex text-center items-center gap-24 justify-between;
+          @apply flex text-center items-center gap-10 justify-between flex-grow;
           .price {
             @apply font-semibold text-lg;
           }
@@ -91,7 +100,10 @@
       @apply font-semibold text-lg;
     }
     .shipping__box {
-      @apply flex bg-white rounded-3xl p-5 items-center gap-4 mt-5;
+      @apply flex bg-white rounded-3xl p-5 items-center gap-4 mt-5 w-full justify-between;
+      .shipping__row {
+        @apply flex flex-row items-center
+      }
       .shipping__text {
         @apply font-semibold mr-12 pl-3;
       }
@@ -103,15 +115,19 @@
       @apply font-semibold text-lg mb-5;
     }
     .promo__box {
-      @apply flex justify-between;
+      @apply flex;
       .promo {
-        @apply h-12 rounded-2xl w-full pl-5;
+        @apply h-12 rounded-2xl pl-5;
+        min-width: 60%;
       }
       .discountoff {
-        @apply bg-dark-blue text-white font-semibold rounded-3xl px-9 flex items-center;
+        @apply h-14 bg-dark-blue text-white font-semibold rounded-3xl px-5 flex items-center justify-between hidden;
+        .clear{
+          @apply ml-5;
+        }
       }
       .btn__add {
-        @apply px-0 m-0 w-14 h-12 rounded-full text-2xl justify-center items-center flex;
+        @apply ml-10 w-14 h-14 rounded-full text-2xl justify-center items-center flex bg-dark-blue text-white;
       }
     }
     .total__price {
@@ -125,9 +141,9 @@
     }
   }
   .modul__gopay {
-    @apply bg-white rounded-t-3xl fixed bottom-0 flex w-full justify-center;
+    @apply bg-white rounded-t-3xl fixed bottom-0 flex w-full justify-center py-8;
   }
   .btn__gopayment {
-    @apply px-20 flex items-center gap-4 bg-black font-semibold;
+    @apply px-20 flex items-center gap-4 py-3 bg-black font-semibold text-white rounded-3xl;
   }
 }

@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .container__login {
   @apply relative bg-white w-[428px] h-[928px] flex flex-col justify-around items-center text-center mx-auto my-3 gap-20;
   .prev__icon {

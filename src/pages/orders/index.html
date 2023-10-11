@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="../../../dist/output.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
   </head>
   <body>
     <!-- <div class="mycart__overlayer"></div> -->
@@ -32,6 +32,7 @@
             class="icon__more"
             name="ellipsis-horizontal-circle-outline"
           ></ion-icon>
+          <a href="/src/pages/search/index.html">
           <svg
             class="search__icon"
             xmlns="http://www.w3.org/2000/svg"
@@ -59,145 +60,31 @@
               </clipPath>
             </defs>
           </svg>
+          </a>
         </div>
       </div>
       <div class="btn__orders">
         <button class="active">Active</button>
         <button class="completed">Completed</button>
       </div>
-      <div class="container__products">
-        <div class="product__box">
-          <img
-            src="../../img/Rectangle 6.png"
-            alt="shoes"
-            class="product__img"
-          />
-          <div class="product__detail">
-            <div class="nameanddelete">
-              <h3 class="name">Air Jordan3 Retro</h3>
-            </div>
-            <div class="nameandcolor__pro">
-              <div class="color">
-                <a
-                  href=""
-                  class="color__show"
-                  style="background-color: gray"
-                ></a>
-                <h6 class="color__name">Black | Size=42</h6>
-              </div>
-            </div>
-            <div class="priceandreview">
-              <h3 class="price">$105.00</h3>
-              <div class="track__box">
-                <button class="btn__trackorder">Track Order</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="product__box">
-          <img
-            src="../../img/Rectangle 6.png"
-            alt="shoes"
-            class="product__img"
-          />
-          <div class="product__detail">
-            <div class="nameanddelete">
-              <h3 class="name">Air Jordan3 Retro</h3>
-            </div>
-            <div class="nameandcolor__pro">
-              <div class="color">
-                <a
-                  href=""
-                  class="color__show"
-                  style="background-color: gray"
-                ></a>
-                <h6 class="color__name">Black | Size=42</h6>
-              </div>
-            </div>
-            <div class="priceandreview">
-              <h3 class="price">$105.00</h3>
-              <div class="quantity__box">
-                <button class="btn__quantity">-</button>
-                <strong>2</strong>
-                <button class="btn__quantity">+</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="product__box">
-          <img
-            src="../../img/Rectangle 6.png"
-            alt="shoes"
-            class="product__img"
-          />
-          <div class="product__detail">
-            <div class="nameanddelete">
-              <h3 class="name">Air Jordan3 Retro</h3>
-            </div>
-            <div class="nameandcolor__pro">
-              <div class="color">
-                <a
-                  href=""
-                  class="color__show"
-                  style="background-color: gray"
-                ></a>
-                <h6 class="color__name">Black | Size=42</h6>
-              </div>
-            </div>
-            <div class="priceandreview">
-              <h3 class="price">$105.00</h3>
-              <div class="quantity__box">
-                <button class="btn__quantity">-</button>
-                <strong>2</strong>
-                <button class="btn__quantity">+</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="product__box">
-          <img
-            src="../../img/Rectangle 6.png"
-            alt="shoes"
-            class="product__img"
-          />
-          <div class="product__detail">
-            <div class="nameanddelete">
-              <h3 class="name">Air Jordan3 Retro</h3>
-            </div>
-            <div class="nameandcolor__pro">
-              <div class="color">
-                <a
-                  href=""
-                  class="color__show"
-                  style="background-color: gray"
-                ></a>
-                <h6 class="color__name">Black | Size=42</h6>
-              </div>
-            </div>
-            <div class="priceandreview">
-              <h3 class="price">$105.00</h3>
-              <div class="quantity__box">
-                <button class="btn__quantity">-</button>
-                <strong>2</strong>
-                <button class="btn__quantity">+</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div class="container__products"></div>
 
       <div class="footer">
+        <a href="/src/pages/home/index.html">
         <div class="icon__footer-wrapper">
-          <img class="imgicon" src="../../img/house-door-fill.png" alt="home" />
+          <img class="imgicon" src="../../img/images/home-2.png" alt="home" />
           <h6 class="nameicon">Home</h6>
         </div>
+        </a>
+        <a href="/src/pages/cart/index.html">
         <div class="icon__footer-wrapper">
           <img class="imgicon" src="../../img/bag.png" alt="bag" />
           <h6 class="nameicon">Cart</h6>
         </div>
+        </a>
         <div class="icon__footer-wrapper">
-          <img class="imgicon" src="../../img/cart2.png" alt="home" />
-          <h6 class="nameicon">Orders</h6>
+          <img class="imgicon shopicon" src="../../img/images/shoppi1.png" alt="home" />
+          <h6 class="nameicon ">Orders</h6>
         </div>
         <div class="icon__footer-wrapper">
           <img class="imgicon" src="../../img/wallet2.png" alt="home" />
@@ -218,4 +105,5 @@
     nomodule
     src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
   ></script>
+<script src="order.js" type="module"></script>
 </html>

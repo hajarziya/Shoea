@@ -1,10 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .container__search {
   @apply p-5;
   .search__box {
     @apply flex justify-between items-center gap-1 bg-bg-product px-3 py-2 w-full mx-auto mb-4;
     .search__left {
       @apply flex items-center gap-2;
-      .input {
+      .input__search {
         @apply w-full bg-transparent pl-3;
       }
     }
@@ -16,7 +20,7 @@
     }
   }
   .notfound {
-    @apply flex flex-col justify-center items-center text-center mt-12;
+    @apply flex flex-col justify-center items-center text-center mt-12 hidden;
     .img__notfound {
       @apply w-52 h-52;
     }
@@ -57,9 +61,13 @@
     }
   }
   .recent__wrapper {
-    @apply my-2 flex items-center justify-between;
+    @apply my-2 flex-col;
+
+    .recent__item {
+      @apply my-2 flex justify-between items-center w-full;
+    }
     .delete__recent {
-      @apply w-5 h-5 flex items-center justify-center;
+      @apply w-5 h-5 flex items-center;
       border: 0.5px solid black;
       border-radius: 5px;
     }

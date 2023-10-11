@@ -1,4 +1,4 @@
-import { fetchProducts, fetchBrandsApi } from "/src/api/products.js";
+import { fetchProductsApi, fetchBrandsApi } from "/src/api/products.js";
 import "./HeaderSection.js";
 import "./BrandsSection.js";
 
@@ -11,7 +11,7 @@ let selectedBrand = "All";
 async function fetchAndDisplayProducts() {
   let productsItem = "";
 
-  const products = await fetchProducts(selectedBrand);
+  const products = await fetchProductsApi({ brand: selectedBrand });
   products.forEach((product) => {
     productsItem += `<a class="product" href="/src/pages/products/details/index.html?productId=${
       product.id
@@ -20,7 +20,7 @@ async function fetchAndDisplayProducts() {
       <img src="${BaseImagePath + product.images[0]}" alt="shoes" />
     </div>
     <h3 class="product_name">${product.name}</h3>
-    <p class="product_price">${product.price}</p>
+    <p class="product_price">$ ${product.price}</p>
   </a>`;
   });
   containerProducts.innerHTML = productsItem;

@@ -1,38 +1,38 @@
 async function fetchBrandsApi() {
   try {
     const response = await fetch("http://localhost:3000/brands");
-    const brands = await response.json();
-    return brands;
+    return await response.json();
   } catch (error) {
     console.error("Error:", error);
     return null;
   }
 }
 
-async function fetchProducts(brand) {
+async function fetchProductsApi({ name, brand }) {
   try {
     let filter = "";
     if (brand && brand !== "All") {
       filter = "?brand=" + brand;
     }
+    if (name) {
+      filter = "?name=" + name;
+    }
     const response = await fetch("http://localhost:3000/products" + filter);
-    const products = await response.json();
-    return products;
+    return await response.json();
   } catch (error) {
     console.error("Error:", error);
     return null;
   }
 }
 
-async function fetchProduct(id) {
+async function fetchProductApi(id) {
   try {
     const response = await fetch("http://localhost:3000/products/" + id);
-    const products = await response.json();
-    return products;
+    return await response.json();
   } catch (error) {
     console.error("Error:", error);
     return null;
   }
 }
 
-export { fetchProducts, fetchBrandsApi, fetchProduct };
+export { fetchProductsApi, fetchBrandsApi, fetchProductApi };

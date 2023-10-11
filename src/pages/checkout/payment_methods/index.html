@@ -4,12 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="../../../../dist/output.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
   </head>
   <body>
     <div class="container__paymentmethods">
       <div class="header">
         <div class="header__left">
+          <a href="/src/pages/checkout/index.html">
           <svg
             class="header__logo"
             xmlns="http://www.w3.org/2000/svg"
@@ -25,10 +26,13 @@
               fill="black"
             />
           </svg>
+          </a>
           <h3 class="header__name">Payment Methods</h3>
         </div>
         <div class="icon_box">
+
           <ion-icon name="close-outline"></ion-icon>
+
         </div>
       </div>
       <h3 class="select__title">Select the paymeent method you want to use.</h3>
@@ -47,7 +51,7 @@
         <div class="payment__box">
           <div class="part__left">
             <img
-              src="../../../img/imges/google.png"
+              src="/src/img/images/google.png"
               alt=""
               class="payment__icon"
               style="width: 20px"
@@ -106,7 +110,21 @@
       <!-- ****************************************** -->
 
       <div class="modul__gopay">
+
         <button class="btn__gopayment">Confirm Payment</button>
+
+      </div>
+      <div class="success__overlayer">
+
+        <div class="orderSuccess__box">
+          <img src="/src/img/images/ordersuccess.png" class="img__success" alt="order">
+          <h3 class="success__title">Order Successful!</h3>
+          <p class="notif__success">You have successfully made order</p>
+          <a class="btn__vieworder" href="/src/pages/orders/index.html">
+          <button >View Order</button>
+          </a>
+          <button class="btn__viewreceipt">View Receipt</button>
+        </div>
       </div>
     </div>
   </body>
@@ -118,4 +136,5 @@
     nomodule
     src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
   ></script>
+<script src="payment.js" type="module"></script>
 </html>

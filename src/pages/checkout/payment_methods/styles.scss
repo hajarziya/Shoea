@@ -1,5 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .container__paymentmethods {
   @apply relative bg-bg-product pb-32 py-10 px-5;
+  height: 100vh;
 
   .header {
     @apply flex items-center justify-between w-full;
@@ -47,12 +52,44 @@
     @apply mx-5;
   }
   .btn__addaddaress {
-    @apply mt-10 px-20 flex items-center gap-4 text-black bg-dark-gray font-semibold w-11/12 justify-center mx-5;
+    @apply mt-10 px-20 flex items-center gap-4  text-black bg-dark-gray font-semibold w-11/12 justify-center py-10 mx-5;
   }
   .modul__gopay {
-    @apply bg-white rounded-t-3xl fixed bottom-0 flex left-0 right-0;
+    @apply bg-white border-gray-100 rounded-t-3xl fixed bottom-0 flex w-full -ml-5 items-center justify-center;
   }
   .btn__gopayment {
-    @apply flex items-center mx-10 text-center w-full p-0 bg-black font-semibold h-12  justify-center shadow-md;
+    @apply flex items-center mx-10 my-5 text-center text-white rounded-3xl  w-full p-0 bg-black font-semibold h-12  justify-center shadow-md;
   }
+}
+
+.success__overlayer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  display: none;
+
+  .orderSuccess__box{
+    @apply bg-white flex flex-col gap-3 justify-center items-center text-center w-7/12 mx-auto my-44 py-8  rounded-3xl;
+    .img__success{
+      @apply w-52 h-52;
+    }
+    .success__title{
+      @apply font-bold text-xl;
+    }
+    .notif__success{
+      @apply text-xs;
+    }
+    .btn__vieworder{
+      @apply bg-dark-blue text-white font-bold px-16 rounded-3xl items-center text-center text-xs py-4;
+    }
+    .btn__viewreceipt{
+      @apply text-dark-blue bg-bg-product font-bold px-16 rounded-3xl items-center text-center text-xs py-4;
+    }
+  }
+
+
 }

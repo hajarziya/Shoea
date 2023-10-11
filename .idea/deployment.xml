@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="webserver" remoteFilesAllowedToDisappearOnAutoupload="false">
+    <serverData>
+      <paths name="apache">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/src/pages/home" local="$PROJECT_DIR$" web="/home" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="webserver">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/src/pages/home" web="/home" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>

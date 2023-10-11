@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="../../../../dist/output.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
   </head>
   <body>
     <div class="container__shippingaddress">
       <div class="header">
+        <a href="/src/pages/checkout/index.html">
         <svg
           class="header__logo"
           xmlns="http://www.w3.org/2000/svg"
@@ -24,68 +25,20 @@
             fill="black"
           />
         </svg>
+        </a>
         <h3 class="header__name">Choose Shipping</h3>
       </div>
 
       <!-- ****************************************** -->
       <div class="shipping__address--container">
-        <div class="address__box">
-          <div class="location__icon--wrapper">
-            <img src="../../../img/imges/chooseshipping/1.png" alt="" />
-          </div>
-          <div class="location__wrapper">
-            <h3 class="location__name">Economy</h3>
-            <h6 class="location__address">61480 Sunbrook park, PC 5679</h6>
-          </div>
-          <h3 class="price">$15</h3>
-          <input class="checkbox" type="radio" name="radio" />
-        </div>
-      </div>
-      <div class="shipping__address--container">
-        <div class="address__box">
-          <div class="location__icon--wrapper">
-            <img src="../../../img/imges/chooseshipping/2.png" alt="" />
-          </div>
-          <div class="location__wrapper">
-            <h3 class="location__name">Regular</h3>
-            <h6 class="location__address">61480 Sunbrook park, PC 5679</h6>
-          </div>
-          <h3 class="price">$10</h3>
-
-          <input class="checkbox" type="radio" name="radio" />
-        </div>
-      </div>
-      <div class="shipping__address--container">
-        <div class="address__box">
-          <div class="location__icon--wrapper">
-            <img src="../../../img/imges/chooseshipping/3.png" alt="" />
-          </div>
-          <div class="location__wrapper">
-            <h3 class="location__name">Cargo</h3>
-            <h6 class="location__address">61480 Sunbrook park, PC 5679</h6>
-          </div>
-          <h3 class="price">$20</h3>
-          <input class="checkbox" type="radio" name="radio" />
-        </div>
-      </div>
-      <div class="shipping__address--container">
-        <div class="address__box">
-          <div class="location__icon--wrapper">
-            <img src="../../../img/imges/chooseshipping/4.png" alt="" />
-          </div>
-          <div class="location__wrapper">
-            <h3 class="location__name">Express</h3>
-            <h6 class="location__address">61480 Sunbrook park, PC 5679</h6>
-          </div>
-          <h3 class="price">$30</h3>
-          <input class="checkbox" type="radio" name="radio" />
-        </div>
       </div>
 
       <!-- ****************************************** -->
 
       <div class="modul__gopay">
-        <button class="btn__gopayment">Apply</button>
+        <a href="/src/pages/checkout/index.html" class="btn__gopayment">
+          <button >Apply</button>
+        </a>
       </div>
     </div>
   </body>
@@ -97,4 +50,5 @@
     nomodule
     src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
   ></script>
+  <script src="./chooseshipping.js" type="module"></script>
 </html>

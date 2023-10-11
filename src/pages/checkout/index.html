@@ -4,34 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="../../../dist/output.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="container__chechout">
+    <div class="container__checkout">
       <div class="header">
         <div class="header__left">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="32"
-            height="32"
-            viewBox="0 0 32 32"
-            fill="none"
-          >
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M23.9998 16.0003C23.9998 16.2655 23.8945 16.5199 23.7069 16.7074C23.5194 16.8949 23.2651 17.0003 22.9998 17.0003H11.4138L15.7078 21.2923C15.8008 21.3853 15.8746 21.4956 15.9249 21.6171C15.9752 21.7386 16.0011 21.8688 16.0011 22.0003C16.0011 22.1318 15.9752 22.262 15.9249 22.3835C15.8746 22.5049 15.8008 22.6153 15.7078 22.7083C15.6149 22.8013 15.5045 22.875 15.383 22.9253C15.2615 22.9757 15.1313 23.0015 14.9998 23.0015C14.8683 23.0015 14.7381 22.9757 14.6167 22.9253C14.4952 22.875 14.3848 22.8013 14.2918 22.7083L8.29183 16.7083C8.19871 16.6154 8.12482 16.505 8.07441 16.3836C8.024 16.2621 7.99805 16.1318 7.99805 16.0003C7.99805 15.8688 8.024 15.7385 8.07441 15.617C8.12482 15.4955 8.19871 15.3852 8.29183 15.2923L14.2918 9.29229C14.4796 9.10451 14.7343 8.99902 14.9998 8.99902C15.2654 8.99902 15.5201 9.10451 15.7078 9.29229C15.8956 9.48006 16.0011 9.73474 16.0011 10.0003C16.0011 10.2658 15.8956 10.5205 15.7078 10.7083L11.4138 15.0003H22.9998C23.2651 15.0003 23.5194 15.1056 23.7069 15.2932C23.8945 15.4807 23.9998 15.7351 23.9998 16.0003Z"
-              fill="black"
-            />
-          </svg>
-          <h3 class="header__name">Chechout</h3>
+          <a href="/src/pages/cart" class="back__btn" style="font-size: 24px">
+            <ion-icon name="arrow-back-outline"></ion-icon>
+          </a>
+          <h3 class="header__name">Checkout</h3>
         </div>
-        <img class="more__icon" src="../../img/image 1 (7).png" alt="brand" />
       </div>
 
       <!-- ****************************************** -->
       <div class="shipping__address--container">
         <div class="address__box">
+          <div class="address__box_left">
           <div class="location__icon--wrapper">
             <ion-icon class="location__icon" name="location"></ion-icon>
           </div>
@@ -39,162 +28,27 @@
             <h3 class="location__name">Home</h3>
             <h6 class="location__address">61480 Sunbrook park, PC 5679</h6>
           </div>
-          <img
-            src="../../img/edit_icon.png"
-            alt="icon_edit"
-            class="edit__icon"
-          />
+          </div>
+          <a href="/src/pages/checkout/shipping_address/index.html">
+            <img
+              src="../../img/edit_icon.png"
+              alt="icon_edit"
+              class="edit__icon"
+            />
+          </a>
         </div>
       </div>
       <hr class="line" />
       <!-- ****************************************** -->
+      <h3 class="title__order">Order List</h3>
       <div class="container__orderlist">
-        <h3 class="title__order">Order List</h3>
-        <div class="product__box">
-          <img
-            src="../../img/Rectangle 6.png"
-            alt="shoes"
-            class="product__img"
-          />
-          <div class="product__detail">
-            <div class="nameanddelete">
-              <h3 class="name">Air Jordan3 Retro</h3>
-              <img
-                class="delete__icon"
-                src="../../img/bin_delete_file_garbage_recycle_remove_trash_icon_123192.png"
-                alt=""
-              />
-            </div>
-            <div class="nameandcolor__pro">
-              <div class="color">
-                <a
-                  href=""
-                  class="color__show"
-                  style="background-color: gray"
-                ></a>
-                <h6 class="color__name">Black | Size=42</h6>
-              </div>
-            </div>
-            <div class="priceandreview">
-              <h3 class="price">$105.00</h3>
-              <div class="quantity__box">
-                <strong>2</strong>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="product__box">
-          <img
-            src="../../img/Rectangle 6.png"
-            alt="shoes"
-            class="product__img"
-          />
-          <div class="product__detail">
-            <div class="nameanddelete">
-              <h3 class="name">Air Jordan3 Retro</h3>
-              <img
-                class="delete__icon"
-                src="../../img/bin_delete_file_garbage_recycle_remove_trash_icon_123192.png"
-                alt=""
-              />
-            </div>
-            <div class="nameandcolor__pro">
-              <div class="color">
-                <a
-                  href=""
-                  class="color__show"
-                  style="background-color: gray"
-                ></a>
-                <h6 class="color__name">Black | Size=42</h6>
-              </div>
-            </div>
-            <div class="priceandreview">
-              <h3 class="price">$105.00</h3>
-              <div class="quantity__box">
-                <strong>2</strong>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="product__box">
-          <img
-            src="../../img/Rectangle 6.png"
-            alt="shoes"
-            class="product__img"
-          />
-          <div class="product__detail">
-            <div class="nameanddelete">
-              <h3 class="name">Air Jordan3 Retro</h3>
-              <img
-                class="delete__icon"
-                src="../../img/bin_delete_file_garbage_recycle_remove_trash_icon_123192.png"
-                alt=""
-              />
-            </div>
-            <div class="nameandcolor__pro">
-              <div class="color">
-                <a
-                  href=""
-                  class="color__show"
-                  style="background-color: gray"
-                ></a>
-                <h6 class="color__name">Black | Size=42</h6>
-              </div>
-            </div>
-            <div class="priceandreview">
-              <h3 class="price">$105.00</h3>
-              <div class="quantity__box">
-                <strong>2</strong>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="product__box">
-          <img
-            src="../../img/Rectangle 6.png"
-            alt="shoes"
-            class="product__img"
-          />
-          <div class="product__detail">
-            <div class="nameanddelete">
-              <h3 class="name">Air Jordan3 Retro</h3>
-              <img
-                class="delete__icon"
-                src="../../img/bin_delete_file_garbage_recycle_remove_trash_icon_123192.png"
-                alt=""
-              />
-            </div>
-            <div class="nameandcolor__pro">
-              <div class="color">
-                <a
-                  href=""
-                  class="color__show"
-                  style="background-color: gray"
-                ></a>
-                <h6 class="color__name">Black | Size=42</h6>
-              </div>
-            </div>
-            <div class="priceandreview">
-              <h3 class="price">$105.00</h3>
-              <div class="quantity__box">
-                <strong>2</strong>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
       <hr class="line" />
       <!-- ***************************************** -->
       <div class="choosing__shipping">
         <h3 class="shipping__title">Choosing Shipping</h3>
         <div class="shipping__box">
-          <img
-            src="../../img/fast-delivery.png"
-            alt="car"
-            class="shipping__icon"
-          />
-          <h3 class="shipping__text">Choosing Shipping Type</h3>
-          <ion-icon name="chevron-forward-outline"></ion-icon>
+
         </div>
       </div>
       <!-- ***************************************** -->
@@ -203,24 +57,30 @@
       <div class="promo__container">
         <h3 class="promo__title">Promo Code</h3>
         <div class="promo__box">
-          <!-- <input type="number" class="promo" placeholder="Enter Promo Code" /> -->
-          <div class="discountoff">Discount 30% Off x</div>
+          <input class="promo" placeholder="Enter Promo Code" />
+          <div class="discountoff">
+            <p>Discount 30% Off</p>
+            <button class="clear">x</button></div>
           <button class="btn__add">+</button>
         </div>
 
         <div class="total__price">
           <div class="amount__wrapper">
             <h3 class="text__amount">Amount</h3>
-            <h3 class="num__amount">$585.00</h3>
+            <h3 class="num__amount"></h3>
           </div>
           <div class="amount__wrapper">
             <h3 class="text__amount">Shipping</h3>
-            <h3 class="num__amount">-</h3>
+            <h3 class="shipping__amount">-</h3>
+          </div>
+          <div class="amount__wrapper">
+            <h3 class="text__promo">Promo</h3>
+            <h3 class="num__Promo">-</h3>
           </div>
           <hr class="line" />
           <div class="amount__wrapper">
             <h3 class="text__amount">Total</h3>
-            <h3 class="num__amount">-</h3>
+            <h3 class="total__amount">-</h3>
           </div>
         </div>
       </div>
@@ -228,7 +88,7 @@
         <button class="btn__gopayment">
           Continue to Payment
           <img
-            src="../../img/imges/gocheckout.png"
+            src="/src/img/images/gocheckout.png"
             alt="icon__go"
             class="icon__go"
           />
@@ -244,4 +104,5 @@
     nomodule
     src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
   ></script>
+  <script src="./checkout.js" type="module"></script>
 </html>

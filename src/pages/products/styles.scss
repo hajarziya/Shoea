@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   @apply bg-white;
 }
@@ -8,6 +12,22 @@ body {
     @apply flex text-center items-center gap-2 mx-6 my-3;
     .title__page {
       @apply text-lg font-semibold;
+    }
+  }
+}
+
+.container__products {
+  @apply flex flex-wrap gap-3 mb-7;
+  .product {
+    @apply flex flex-col mx-auto;
+    .img_wrapper {
+      @apply w-40 h-40 bg-bg-product rounded-3xl p-3;
+    }
+    .product_name {
+      @apply font-semibold text-lg;
+    }
+    .product_price {
+      @apply p-0 text-base;
     }
   }
 }

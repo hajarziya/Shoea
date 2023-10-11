@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .container__home {
   @apply relative bg-white flex flex-col mx-auto pb-20;
   .header {
@@ -30,7 +34,7 @@
   @apply grid grid-rows-2 grid-flow-col gap-10 mx-5 my-3;
 
   .barand-wrapper {
-    @apply w-20 justify-center items-center flex flex-col;
+    @apply justify-center items-center flex flex-col;
     .barand_img {
       @apply w-14 h-14 border-none rounded-full bg-bg-gray flex justify-center text-center items-center;
     }

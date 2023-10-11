@@ -8,12 +8,12 @@ const slidThree = document.querySelector(".slid__three");
 setTimeout(function () {
   container.style.display = "none";
   container_bg_2.style.display = "block";
-}, 1000);
+}, 3000);
 
 setTimeout(function () {
   container_bg_2.style.display = "none";
   container_three.style.display = "block";
-}, 2000);
+}, 6000);
 
 let currentSlide = 1;
 

@@ -1,5 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .container__shippingaddress {
   @apply relative bg-bg-product pb-10 relative py-10;
+  height: 100vh;
 
   .header {
     @apply flex items-center gap-3 px-5;
@@ -13,7 +18,7 @@
 
   .shipping__address--container {
     .address__box {
-      @apply flex mt-5 mx-auto bg-white gap-3 p-4 rounded-lg items-center mx-5;
+      @apply flex mt-5 bg-white gap-3 p-4 rounded-lg items-center mx-5;
       .location__icon--wrapper {
         @apply flex w-12 h-12 bg-bg-product rounded-full items-center justify-center;
         .location__icon {
@@ -40,9 +45,9 @@
     @apply mt-10 px-20 flex items-center gap-4 text-black bg-dark-gray font-semibold w-11/12 justify-center mx-5;
   }
   .modul__gopay {
-    @apply bg-gray-50 border-gray-100 rounded-t-3xl fixed bottom-0 flex w-full;
+    @apply bg-white rounded-t-3xl fixed bottom-0 flex w-full justify-center py-8;
   }
   .btn__gopayment {
-    @apply w-11/12 flex items-center  text-center  bg-black font-semibold h-12  justify-center mx-5;
+    @apply flex items-center text-center bg-black font-semibold h-12 w-full justify-center mx-5 rounded-3xl text-white;
   }
 }

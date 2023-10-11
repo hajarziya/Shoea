@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="../../../dist/output.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
     <title>Document</title>
     <style>
       .btns__container::-webkit-scrollbar {
@@ -14,6 +14,7 @@
   <body>
     <div class="products__container">
       <div class="title__page--box">
+        <a href="/src/pages/home">
         <svg
           class="prev__icon"
           xmlns="http://www.w3.org/2000/svg"
@@ -29,62 +30,14 @@
             fill="black"
           />
         </svg>
-        <h3 class="title__page">Most Popular</h3>
+        </a>
+        <h3 class="title__page"></h3>
       </div>
       <div style="overflow-x: scroll" class="btns__container">
-        <button class="btn_barand">All</button>
-        <button class="btn_barand">Nike</button>
-        <button class="btn_barand">Adidas</button>
-        <button class="btn_barand">Puma</button>
-        <button class="btn_barand">Reebok</button>
-        <button class="btn_barand">Converse</button>
-        <button class="btn_barand">NewBa..</button>
-        <button class="btn_barand">Asics</button>
       </div>
-      <div class="container__products">
-        <div class="product">
-          <div class="img_wrapper">
-            <img src="../../img/Rectangle 6.png" alt="shoes" />
-          </div>
-          <h3 class="product_name">K-Swiss ista train...</h3>
-          <p class="product_price">$ 85.00</p>
-        </div>
-        <div class="product">
-          <div class="img_wrapper">
-            <img src="../../img/Rectangle 6.png" alt="shoes" />
-          </div>
-          <h3 class="product_name">K-Swiss ista train...</h3>
-          <p class="product_price">$ 85.00</p>
-        </div>
-        <div class="product">
-          <div class="img_wrapper">
-            <img src="../../img/Rectangle 6.png" alt="shoes" />
-          </div>
-          <h3 class="product_name">K-Swiss ista train...</h3>
-          <p class="product_price">$ 85.00</p>
-        </div>
-        <div class="product">
-          <div class="img_wrapper">
-            <img src="../../img/Rectangle 6.png" alt="shoes" />
-          </div>
-          <h3 class="product_name">K-Swiss ista train...</h3>
-          <p class="product_price">$ 85.00</p>
-        </div>
-        <div class="product">
-          <div class="img_wrapper">
-            <img src="../../img/Rectangle 6.png" alt="shoes" />
-          </div>
-          <h3 class="product_name">K-Swiss ista train...</h3>
-          <p class="product_price">$ 85.00</p>
-        </div>
-        <div class="product">
-          <div class="img_wrapper">
-            <img src="../../img/Rectangle 6.png" alt="shoes" />
-          </div>
-          <h3 class="product_name">K-Swiss ista train...</h3>
-          <p class="product_price">$ 85.00</p>
-        </div>
-      </div>
+      <div class="container__products"></div>
+
     </div>
+    <script src="./product.js" type="module"></script>
   </body>
 </html>

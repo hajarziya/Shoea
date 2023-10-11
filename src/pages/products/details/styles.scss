@@ -1,14 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .detail__container {
+  .back__btn {
+    @apply p-4 text-2xl absolute z-10
+  }
   .gallery {
-    @apply relative;
+    .gallery__images {
+      @apply relative flex flex-row overflow-scroll;
+      min-height: 40vh;
+    }
     .detail__img {
-      @apply w-full bg-bg-product px-12 py-5;
+      @apply w-full bg-bg-product px-12 py-5 object-contain;
     }
     .prev__icon {
       @apply absolute top-2 left-2;
     }
     .dots {
-      @apply flex gap-1 top-80 left-40 absolute;
+      @apply flex gap-1 top-52 left-40 absolute;
       .dot__active {
         @apply w-6 h-2 bg-dark-blue rounded-2xl;
       }
@@ -59,6 +69,10 @@
         @apply flex gap-2;
         .sizenumber {
           @apply border rounded-full w-11 h-11 flex text-center items-center justify-center ring-dark-gray ring-2 text-dark-gray;
+
+          &.active {
+            @apply bg-dark-blue text-white border-none;
+          }
         }
       }
     }
@@ -72,6 +86,14 @@
 
         .color {
           @apply w-12 h-12 rounded-full bg-black;
+
+          &.active::before {
+            content: "\2713";
+            position: absolute;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 20px;
+          }
         }
       }
     }
@@ -100,8 +122,8 @@
       }
     }
 
-    .btn__price {
-      @apply flex py-3 px-16 gap-2 text-center items-center;
+    .btn__cart {
+      @apply flex py-3 px-16 gap-2 text-center items-center bg-dark-blue rounded-3xl text-white;
     }
   }
 }

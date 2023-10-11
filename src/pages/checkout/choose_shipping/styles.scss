@@ -1,5 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .container__shippingaddress {
   @apply relative bg-bg-product pb-40 relative py-10;
+  height: 100vh;
 
   .header {
     @apply flex items-center gap-3 px-5;
@@ -38,9 +43,10 @@
   }
 
   .modul__gopay {
-    @apply bg-gray-50 border-gray-100 rounded-t-3xl fixed bottom-0 flex w-full;
+    @apply bg-gray-50 border-gray-100 rounded-t-3xl fixed bottom-10 flex w-full;
+
   }
   .btn__gopayment {
-    @apply w-11/12 flex items-center  text-center  bg-black font-semibold h-12  justify-center mx-5;
+    @apply flex items-center text-center bg-black font-semibold h-12 w-full justify-center mx-5 rounded-3xl text-white;
   }
 }

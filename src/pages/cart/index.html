@@ -4,10 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="../../../dist/output.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="mycart__overlayer"></div>
     <div class="container__cart">
       <div class="header">
         <div class="header__left">
@@ -26,7 +25,7 @@
           </svg>
           <h3 class="header__name">My Cart</h3>
         </div>
-
+        <a href="/src/pages/search/index.html">
         <svg
           class="search__icon"
           xmlns="http://www.w3.org/2000/svg"
@@ -54,169 +53,37 @@
             </clipPath>
           </defs>
         </svg>
+        </a>
       </div>
-      <div class="container__products">
-        <div class="product__box">
-          <img
-            src="../../img/Rectangle 6.png"
-            alt="shoes"
-            class="product__img"
-          />
-          <div class="product__detail">
-            <div class="nameanddelete">
-              <h3 class="name">Air Jordan3 Retro</h3>
-              <img
-                class="delete__icon"
-                src="../../img/bin_delete_file_garbage_recycle_remove_trash_icon_123192.png"
-                alt=""
-              />
-            </div>
-            <div class="nameandcolor__pro">
-              <div class="color">
-                <a
-                  href=""
-                  class="color__show"
-                  style="background-color: gray"
-                ></a>
-                <h6 class="color__name">Black | Size=42</h6>
-              </div>
-            </div>
-            <div class="priceandreview">
-              <h3 class="price">$105.00</h3>
-              <div class="quantity__box">
-                <button class="btn__quantity">-</button>
-                <strong>2</strong>
-                <button class="btn__quantity">+</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="product__box">
-          <img
-            src="../../img/Rectangle 6.png"
-            alt="shoes"
-            class="product__img"
-          />
-          <div class="product__detail">
-            <div class="nameanddelete">
-              <h3 class="name">Air Jordan3 Retro</h3>
-              <img
-                class="delete__icon"
-                src="../../img/bin_delete_file_garbage_recycle_remove_trash_icon_123192.png"
-                alt=""
-              />
-            </div>
-            <div class="nameandcolor__pro">
-              <div class="color">
-                <a
-                  href=""
-                  class="color__show"
-                  style="background-color: gray"
-                ></a>
-                <h6 class="color__name">Black | Size=42</h6>
-              </div>
-            </div>
-            <div class="priceandreview">
-              <h3 class="price">$105.00</h3>
-              <div class="quantity__box">
-                <button class="btn__quantity">-</button>
-                <strong>2</strong>
-                <button class="btn__quantity">+</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="product__box">
-          <img
-            src="../../img/Rectangle 6.png"
-            alt="shoes"
-            class="product__img"
-          />
-          <div class="product__detail">
-            <div class="nameanddelete">
-              <h3 class="name">Air Jordan3 Retro</h3>
-              <img
-                class="delete__icon"
-                src="../../img/bin_delete_file_garbage_recycle_remove_trash_icon_123192.png"
-                alt=""
-              />
-            </div>
-            <div class="nameandcolor__pro">
-              <div class="color">
-                <a
-                  href=""
-                  class="color__show"
-                  style="background-color: gray"
-                ></a>
-                <h6 class="color__name">Black | Size=42</h6>
-              </div>
-            </div>
-            <div class="priceandreview">
-              <h3 class="price">$105.00</h3>
-              <div class="quantity__box">
-                <button class="btn__quantity">-</button>
-                <strong>2</strong>
-                <button class="btn__quantity">+</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="product__box">
-          <img
-            src="../../img/Rectangle 6.png"
-            alt="shoes"
-            class="product__img"
-          />
-          <div class="product__detail">
-            <div class="nameanddelete">
-              <h3 class="name">Air Jordan3 Retro</h3>
-              <img
-                class="delete__icon"
-                src="../../img/bin_delete_file_garbage_recycle_remove_trash_icon_123192.png"
-                alt=""
-              />
-            </div>
-            <div class="nameandcolor__pro">
-              <div class="color">
-                <a
-                  href=""
-                  class="color__show"
-                  style="background-color: gray"
-                ></a>
-                <h6 class="color__name">Black | Size=42</h6>
-              </div>
-            </div>
-            <div class="priceandreview">
-              <h3 class="price">$105.00</h3>
-              <div class="quantity__box">
-                <button class="btn__quantity">-</button>
-                <strong>2</strong>
-                <button class="btn__quantity">+</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div class="container__products"></div>
       <div class="totalprice__box">
         <div class="price__wrapper">
           <h6 class="total">Total price</h6>
-          <h3 class="total__num">$573.00</h3>
+          <h3 class="total__num"></h3>
         </div>
-        <button class="btn__checkout">Chechout</button>
+        <button class="btn__checkout">Checkout</button>
       </div>
       <div class="footer">
         <div class="icon__footer-wrapper">
-          <img class="imgicon" src="../../img/house-door-fill.png" alt="home" />
-          <h6 class="nameicon">Home</h6>
+          <a href="/src/pages/home/index.html">
+            <img
+              class="imgicon"
+              src="../../img/images/home-2.png"
+              alt="home"
+            />
+            <h6 class="nameicon">Home</h6>
+          </a>
         </div>
         <div class="icon__footer-wrapper">
-          <img class="imgicon" src="../../img/bag.png" alt="bag" />
+          <img class="imgicon" src="../../img/images/cart-2.png" alt="bag" />
           <h6 class="nameicon">Cart</h6>
         </div>
+        <a href="/src/pages/orders/index.html">
         <div class="icon__footer-wrapper">
           <img class="imgicon" src="../../img/cart2.png" alt="home" />
           <h6 class="nameicon">Orders</h6>
         </div>
+        </a>
         <div class="icon__footer-wrapper">
           <img class="imgicon" src="../../img/wallet2.png" alt="home" />
           <h6 class="nameicon">Wallet</h6>
@@ -226,52 +93,41 @@
           <h6 class="nameicon">Profile</h6>
         </div>
       </div>
-      <div class="remove__box">
-        <h3 class="remove__title">Remove From Cart?</h3>
-
-        <hr />
-        <div class="delete__product--box">
-          <div class="product__box">
-            <img
-              src="../../img/Rectangle 6.png"
-              alt="shoes"
-              class="product__img"
-            />
-            <div class="product__detail">
-              <div class="nameanddelete">
-                <h3 class="name">Air Jordan3 Retro</h3>
-                <img
-                  class="delete__icon"
-                  src="../../img/bin_delete_file_garbage_recycle_remove_trash_icon_123192.png"
-                  alt=""
-                />
-              </div>
-              <div class="nameandcolor__pro">
-                <div class="color">
-                  <a
-                    href=""
-                    class="color__show"
-                    style="background-color: gray"
-                  ></a>
-                  <h6 class="color__name">Black | Size=42</h6>
-                </div>
-              </div>
-              <div class="priceandreview">
-                <h3 class="price">$105.00</h3>
-                <div class="quantity__box">
-                  <button class="btn__quantity">-</button>
-                  <strong>2</strong>
-                  <button class="btn__quantity">+</button>
-                </div>
-              </div>
+      <div class="mycart__overlayer">
+        <div class="remove__box">
+          <h3 class="remove__title">Remove From Cart?</h3>
+          <hr />
+          <div class="delete__product--box">
+            <div class="product__box"></div>
+            <hr />
+            <div class="btns__box">
+              <button class="cancle">Cancel</button>
+              <button class="remove">Yes,Remove</button>
             </div>
           </div>
-          <hr />
-          <div class="btns__box">
-            <button class="cancle">Cancek</button>
-            <button class="remove">Yes,Remove</button>
-          </div>
         </div>
+      </div>
+    </div>
+    <div class="footer">
+      <a class="icon__footer-wrapper" href="/src/pages/home">
+        <img class="imgicon" src="../../img/images/home-2.png" alt="home" />
+        <h6 class="nameicon">Home</h6>
+      </a>
+      <a class="icon__footer-wrapper" href="/src/pages/cart">
+        <img class="imgicon" src="../../img/images/cart-2.png" alt="bag" />
+        <h6 class="nameicon">Cart</h6>
+      </a>
+      <a class="icon__footer-wrapper" href="/src/pages/orders">
+        <img class="imgicon" src="../../img/cart2.png" alt="home" />
+        <h6 class="nameicon">Orders</h6>
+      </a>
+      <div class="icon__footer-wrapper">
+        <img class="imgicon" src="../../img/wallet2.png" alt="home" />
+        <h6 class="nameicon">Wallet</h6>
+      </div>
+      <div class="icon__footer-wrapper">
+        <img class="imgicon" src="../../img/person.png" alt="home" />
+        <h6 class="nameicon">Profile</h6>
       </div>
     </div>
   </body>
@@ -283,4 +139,5 @@
     nomodule
     src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
   ></script>
+  <script src="cart.js" type="module"></script>
 </html>
