@@ -29,8 +29,8 @@
       .input {
         @apply w-full bg-transparent;
       }
-      .show__icon {
-        @apply bg-white;
+      .eye {
+        @apply hidden
       }
     }
   }

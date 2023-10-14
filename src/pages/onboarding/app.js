@@ -22,19 +22,14 @@ buttonNext.addEventListener("click", () => {
   slidTwo.style.display = "none";
   slidThree.style.display = "none";
 
-  currentSlide++;
-
-  if (currentSlide > 3) {
-    currentSlide = 1;
-  }
-
   if (currentSlide === 1) {
-    slidOne.style.display = "block";
-  } else if (currentSlide === 2) {
     slidTwo.style.display = "block";
-  } else if (currentSlide === 3) {
+    currentSlide=2;
+  } else if (currentSlide === 2) {
     slidThree.style.display = "block";
     buttonNext.textContent = "Get Started";
+    currentSlide=3;
+  } else if (currentSlide === 3) {
     window.location.href = "../../pages/login/index.html";
   }
 });

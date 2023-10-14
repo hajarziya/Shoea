@@ -5,6 +5,16 @@
 body {
   @apply bg-white;
 }
+.btns__container {
+  @apply flex gap-2 px-4 my-4 overflow-scroll;
+
+  .btn_barand {
+    @apply bg-transparent text-dark-blue border-dark-blue border-2 px-4 py-0 h-fit rounded-2xl;
+    &.active {
+      @apply bg-dark-blue text-white;
+    }
+  }
+}
 
 .products__container {
   @apply bg-white;
@@ -15,6 +25,7 @@ body {
     }
   }
 }
+
 
 .container__products {
   @apply flex flex-wrap gap-3 mb-7;

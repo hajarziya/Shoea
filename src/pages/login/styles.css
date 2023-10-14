@@ -614,9 +614,8 @@ video {
   width: 100%;
   background-color: transparent;
 }
-.container__login .wrapper__inputs .password__box .show__icon {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+.container__login .wrapper__inputs .password__box .eye {
+  display: none;
 }
 .container__login .check__container {
   position: relative;

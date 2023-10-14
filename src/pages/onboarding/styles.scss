@@ -11,8 +11,18 @@
   animation: spin 2s linear infinite;
 }
 
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .container {
-  @apply bg-white w-[428px] h-[928px] flex flex-col justify-around items-center text-center mx-auto my-3 pt-48;
+  @apply bg-white w-[428px] flex flex-col justify-around items-center text-center mx-auto my-3 pt-48;
+  height: 80vh;
 
   .logo__wrapper {
     @apply bg-white flex;
@@ -88,6 +98,12 @@
   .fade {
     animation-name: fade;
     animation-duration: 1.5s;
+
+    .image {
+      height: 60vh;
+      width: 100%;
+      object-fit: contain;
+    }
   }
 
   @keyframes fade {
