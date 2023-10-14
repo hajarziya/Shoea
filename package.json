@@ -1,6 +1,7 @@
 {
   "scripts": {
     "prestart": "gulp",
+    "start:db": "json-server --watch db.json",
     "start": "npx live-server"
   },
   "devDependencies": {
@@ -16,6 +17,7 @@
   "dependencies": {
     "gulp": "^4.0.2",
     "postcss": "^8.4.31",
-    "postcss-import": "^15.1.0"
+    "postcss-import": "^15.1.0",
+    "json-server": "^0.17.4"
   }
 }
